@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);    
+}
+
+/* navbar section */
+
+
+:root{
+    --primary-color: #fff;
+    --secondary-color: rgb(60,60,60);
+}
+
+.dark-color-theme{
+    --primary-color: rgb(60, 60, 60);
+    --secondary-color: #fff;
+}
+
+.switch-button-theme{
+    background-color: black;
+    border: #fff;
+}
+
+.container{
+    max-width: 80%;
+}
+
+h1,h2{
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.navbar{
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.navlink{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+.mid-link{
+    margin-inline: 40px;
+}
+
+.link{
+    font-size: 1.2rem;
+}
+
+.switch-button{
+    height: 1.3rem;
+    margin-right: 8px;
+    color: var(--secondary-color);
+}
+
+label{
+    color: var(--secondary-color);
+}
+
+/* main section */
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    max-width: 50%;
+}
+
+h1{
+    margin-bottom: 18px;
+}
+
+li{
+    font-weight: bold;
+    list-style:inside;
+    color: var(--secondary-color);
+}
+
+p{
+    color: var(--secondary-color);
+}
+
+button{
+    margin-top: 10px;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* footer section  */
+
+footer p{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%,0);
+    color: var(--secondary-color);
+}
+
+@media screen and (max-width: 400px) {
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+    .navlink{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px; 
+        gap: 10px;   
+    }
+
+    h2{
+        font-family:'Caveat', cursive;
+        font-size: 2rem;
+    }
+
+    .main{
+        min-width: 80%;
+        display: flex;
+        flex-direction: column; 
+        position: absolute;
+        margin-top: 42px;     
+    }
+
+    p{
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+
+    li{
+        font-size: 1.1rem;
+    }
+
+    footer p{
+        bottom: 5%;
+        font-size: 1.2rem;
+    }
+}
+    
+
+
+
