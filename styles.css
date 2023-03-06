@@ -135,7 +135,7 @@ footer p{
         display: flex;
         flex-direction: column; 
         position: absolute;
-        margin-top: 42px;     
+        margin-top: 52px;     
     }
 
     p{
@@ -145,10 +145,11 @@ footer p{
 
     li{
         font-size: 1.1rem;
+        list-style: outside;
     }
 
     footer p{
-        bottom: 5%;
+        bottom: 2%;
         font-size: 1.2rem;
     }
 }
